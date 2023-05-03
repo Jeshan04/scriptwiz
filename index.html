@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>ScriptWiz AI</title>              
+        <!-- link rel="preconnect" href="https://fonts.googleapis.com"-->
+        <link rel="preconnect" href="{{ url_for('static', filename='fonts.googleapis.com') }}">
+
+        <!--link rel="preconnect" href="https://fonts.gstatic.com" crossorigin-->
+        <link rel="preconnect" href="{{ url_for('static', filename='fonts.gstatic.com') }}" crossorigin>
+
+
+        <!--link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet"-->
+        <link href="{{ 'https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap'|safe }}" rel="stylesheet">
+
+
+        <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+        <!--link href="css/bootstrap-icons.css" rel="stylesheet"-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-icons.css') }}">
+
+        <!--link href="css/styles.css" rel="stylesheet"-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    </head>
+    
+    <body>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="{{ url_for('index') }}">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}" class="navbar-brand-image img-fluid" alt="logo">
+                        <span class="navbar-brand-text">
+                            Script Wiz <span style="color: red;">AI</span>
+                            <small>The Text To Code AI</small>
+                        </span>
+                    </a>
+            
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Try ScriptWiz AI</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Resources Used</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">About Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">                
+               
+                
+                
+
+            </div>
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                <div class="section-overlay"></div>
+
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <h2 class="text-white">Welcome to ScriptWiz<span  style="color: red;"> AI</span></h2>
+
+                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                                <span>We can</span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">convert text to code</b>
+                                    <b>provide quick and reliable outputs</b>
+                                    <b>give open source codes</b>
+                                </span>
+                            </h1>
+
+                            <div class="custom-btn-group">
+                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Try Script</a>
+
+                                <a href="#section_3" class="link smoothscroll">About Us</a>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+              
+            </section>
+              
+            <section class="about-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12 text-center">
+                            <br/>
+                            <h1 class="mb-lg-5 mb-4">ScriptWiz <span style="color: red;">AI</span></h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 mx-auto">
+                        <form method="post" action="/display">
+                            <br/>
+                                <button type="submit" class="btn custom-btn smoothscroll me-3 try-btn" name="submit_button" value="submit">Try Scriptwiz AI</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            </section> 
+
+            <section class="section-bg-image">
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12"> <h2
+                        class="mb-lg-3"></h2>
+
+                                <p></p>
+
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+            </section>
+
+
+            <section class="membership-section section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
+                            <h2>ABOUT US</h1>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-3 mb-lg-0">
+                            <h4 class="mb-4 pb-lg-2"></h4>
+
+                            
+                        </div>
+
+                        <div class="col-lg-5 col-12 mx-auto">
+                        <h4 class="mb-4 pb-lg-2"></h4>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="events-section section-bg section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <!-- <h2 class="mb-lg-3">About Us</h2> -->
+                        </div>
+
+                        <div class="row custom-block mb-3">
+                            <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                                <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">Eshan</h6>
+                                    
+                                    <strong class="text-white">Developer</strong>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                                <div class="custom-block-image-wrap">
+
+                                    <img src="{{ url_for('static', filename='images/m1.jpg') }}" class="custom-block-image img-fluid" alt="">
+
+                                        
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12 order-3 order-lg-0">
+                                <div class="custom-block-info mt-2 mt-lg-0">
+                                    <a href="" class="events-title mb-3">Eshan Joshi</a>
+
+                                    <p class="mb-0">Wrote the ML code and Created this Website</p>
+
+                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row custom-block custom-block-bg">
+                            <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                                <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">Dhruv</h6>
+                                    
+                                    <strong class="text-white">Developer</strong>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                                <div class="custom-block-image-wrap">
+                
+                                    <img src="{{ url_for('static', filename='images/m2.jpg') }}" class="custom-block-image img-fluid" alt="">
+
+
+                        
+                                  
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12 order-3 order-lg-0">
+                                <div class="custom-block-info mt-2 mt-lg-0">
+                                    <a href="" class="events-title mb-3">Dhruv Thanawala</a>
+
+                                    <p class="mb-0">Created the flask app and handled the output</p>
+
+                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row custom-block mb-3">
+                            <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                                <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">Kayan</h6>
+                                    
+                                    <strong class="text-white">Developer</strong>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                                <div class="custom-block-image-wrap">
+
+                                    <img src="{{ url_for('static', filename='images/m3.jpg') }}" class="custom-block-image img-fluid" alt="">
+
+                                        
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12 order-3 order-lg-0">
+                                <div class="custom-block-info mt-2 mt-lg-0">
+                                    <a href="" class="events-title mb-3">Kayan Irani</a>
+
+                                    <p class="mb-0">Linked the ML Code to the Flask app with the H5 file</p>
+
+                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+           
+
+
+        <!-- JAVASCRIPT FILES -->
+        <!--script src="js/jquery.min.js"></script-->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
+        <!--script src="js/bootstrap.bundle.min.js"></script-->
+        <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+        <!--script src="js/jquery.sticky.js"></script-->
+        <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+
+        <!--script src="js/click-scroll.js"></script-->
+        <script src="{{ url_for('static', filename='js/click-scroll.js') }}"></script>
+
+        <!--script src="js/animated-headline.js"></script-->
+        <script src="{{ url_for('static', filename='js/animated-headline.js') }}"></script>
+
+        <!--script src="js/modernizr.js"></script-->
+        <script src="{{ url_for('static', filename='js/modernizr.js') }}"></script>
+
+        <!--script src="js/custom.js"></script-->
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+    </body>
+</html>

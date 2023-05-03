@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScriptWiz AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+  </head>
+  <body>
+    <div class="Response"></div>
+    <div class="footer"></div>
+    <div class="bottom">
+      <form class="chatForm" action="/output" method="post">
+        <input type="text" name="inp" class="Question"/>
+        <button type="submit">GOOOO</button>
+        <svg class="sendButton" type="submit" onclick="sendQuery()" troke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="h-4 w-4 rotate-90" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path>
+        </svg>
+        <g id="dotsWrapper" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <g sketch:type="MSArtboardGroup" fill="#A3A3A3">
+                <circle id="dot1" sketch:type="MSShapeGroup" cx="90" cy="30" r="3"></circle>
+                <circle id="dot2" sketch:type="MSShapeGroup" cx="100" cy="30" r="3"></circle>
+                <circle id="dot3" sketch:type="MSShapeGroup" cx="110" cy="30" r="3"></circle>
+            </g>
+        </g>
+    </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
